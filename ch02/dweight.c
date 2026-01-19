@@ -10,7 +10,7 @@ int main(void)
     length = 12;
     width = 10;
 	volume = height * length * width;
-	weight = (volume + 165) / 166;
+	weight = (volume + 165) / 166; // 165 is added to the volume so the weight is rounded up if the RHS doesn't produce an integer.
 
 	printf("Dimensions: %dx%dx%d\n", length, width, height);
 	printf("Volume (cubic inches) : %d\n", volume);
