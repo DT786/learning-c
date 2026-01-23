@@ -1,3 +1,5 @@
 Comments which begin with // are not supported by C89.
 
 In C89, variables must be declared at the beginning of a scope.
+
+In C, when an integer is divided by another integer, the answer is truncated.
