@@ -1,0 +1,1 @@
+It is not a good idea for an identifier to contain more than one adjacent underscore as it may not be clear how many adjacent underscores there are to someone reading the code or even the creator of the code. This can result in accidentally using the wrong number of underscores when referencing the variable. 

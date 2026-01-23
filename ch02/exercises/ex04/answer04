@@ -1,0 +1,21 @@
+I compiled the program using clang. After executing the program 5 times, here are my observations:
+
+For the int variables:
+	variable 1 = -29278032
+	variable 2 = 1
+	variable 3 = -29278184
+	variable 4 = 1
+	variable 5 = a 10 digit number starting with 18, the last digit is even
+
+	Variable 1 and 3 are similar, variable 2 and 4 are equal, the values of the first 4 variables are constant, variable 5 seems to be partially random, and isn't constant.
+
+For the float variables:
+	variable 1 = 0.000000
+	variable 2 = 0.000000
+	variable 3 = 0.000000
+	variable 4 = -64218449240816370019687722283301863424.000000
+	variable 5 = 0.000000
+
+	Variable 1, 2, 3, and 5 are equal and constant, varialbe 4 is a long negative number and also constant.
+
+[Constant: values stay the same throughout each execution of the file.]

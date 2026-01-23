@@ -1,0 +1,1 @@
+I didn't get a warning message from the compiler, but a warning message would be the result of a missing 'return 0;' from main.

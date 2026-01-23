@@ -1,0 +1,1 @@
+100_bottles is not a legal identifier for C since it starts with a digit. In C, an identifier must begin with a letter or an underscore.

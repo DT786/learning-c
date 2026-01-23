@@ -1,0 +1,5 @@
+Essential spaces in the dweight.c program:
+	Line 4: the line between #include <stdio.h> and int main(void)
+	Line 5: the space in int main(void)
+	Line 7: the space in int height
+	Line 18: the space in return 0;
