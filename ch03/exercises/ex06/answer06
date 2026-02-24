@@ -1,0 +1,2 @@
+Line 9: scanf("%d/%d", &num1, &denom1); -> scanf("%d / %d", &num1, &denom1);
+Line l2: scanf("%d/%d", &num2, &denom); -> scanf("%d / %d", &num2, &denom2);

@@ -1,0 +1,6 @@
+scanf format strings
+
+a) "%d" and " %d" are the same.
+b) "%d-%d-%d" and "%d -%d -%d" are the same.
+c) "%f" and "%f " are not the same because "%f" skips whitespace then reads a floating-point number, whereas "%f " skips whitespace, reads a floating-point number, then skips to the next non-whitespace character. This could lead to the program waiting until a non-whitespace character is entered. To distinguish between the two format strings, "%f " could be written as "%f\n".
+d) "%f,%f" and "%f, %f" are the same.
