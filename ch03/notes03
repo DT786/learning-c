@@ -1,0 +1,22 @@
+A conversion specification can have the form %m.pX or %-m.pX, where m and p are integer constants, and X is a letter. Both m and p are optional. For example, in the conversion specification %10.2f, m is 10, p is 2, and X is f. If p isn't going to be used, then the decimal point is also removed, e.g. %10f where m is 10 and X is f, there is no decimal point as there is no value for p.
+m is the minimum field width, which specifies the minimum number of characters to print. If the value to be printed requires fewer than m characters, the value is right-justified (extra spaces precede the value until there are m characters displayed). If the value to be printed requires more than m characters, the field width automatically expands to the necessary size.
+p is the precision, and depends on the choice of X (the conversion specifier). X indicates which conversion should be applied to the value before it's printed.
+The most common conversions specifiers for numbers are:
+	d - Displays an integer in decimal (base 10) form. p indicates the minimum number of digits to display (extra zeros are added to the beginning of the number if necessary). If p is omitted, it is assumed to have the value 1.
+	e - Displays a floating-point number in exponential format. p indicates how many digits should appear after the decimal point (the default is 6). If p is 0, the decimal point is not displayed.
+	f - Displays a floating-point number in fixed decimal format, without an exponent. p has the same meaning as for the e specifier.
+	g - Displays a floating-point number in either exponential format or fixed decimal format, depending on the number's size. p indicates the maximum number of significant digits to be displayed. This conversion won't show trailing zeros, unlike the f conversion. If the value to be printed has no digits after the decimal point, the decimal point won't be displaued. When used to print a moderately large or moderately small number, fixed decimal format is used. But when used to print a very large or very small number, exponential format is used so that the number will require fewer characters.
+
+Some escape sequences:
+	\a - Causes an audible beep on most machines.
+	\b - Moves the cursor back one position.
+	\n - Advances the cursor to the beginning of the next line.
+	\t - Moves the cursor to the next tab stop.
+	\" - Prints the character "
+	\\ - Prints the character \
+
+When asked to read an integer, scanf first searches for a digit, a plus sign, or a minus sign; it then reads digits until it reaches a nondigit.
+When asked to read a floating-point number, scanf looks for a plus or minus sign (optional), followed by a series of digits (possible containing a decimal point), followed by an exponent (optional). An exponent consists of the letter e (or E), an optional sign, and one or more digits.
+The %e, %f, and %g conversions are interchangeable when using scanf; all three follow the same rules for recognising a floating-point number.
+When scanf encounters a character that can't be part of the current item, the character is 'put back' to be read again during the scanning of the next input item or during the next call of scanf.
+If printf enconters two consecutive % characters in a format string, it prints a single % character.
